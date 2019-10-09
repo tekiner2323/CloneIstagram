@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!--Main Relativ-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Top BAR-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TopBarRelativeLay">
+
+            <include layout="@layout/layout_top_bar"/>
+
+        </RelativeLayout>
+
+
+        <!-- Orta Sekme Alanı-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MidScpaceRelativeLay"
+            android:layout_below="@+id/TopBarRelativeLay">
+
+            <include layout="@layout/layout_midle_space_viewpage"/>
+
+        </RelativeLayout>
+
+
+        <!--Alt BAR -->
+        <include layout="@layout/layout_bottom_navigasion_bar"/>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
