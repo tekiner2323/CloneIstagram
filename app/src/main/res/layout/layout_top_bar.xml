@@ -10,10 +10,13 @@
        <com.google.android.material.appbar.AppBarLayout
            android:layout_width="match_parent"
            android:layout_height="wrap_content">
+
            <androidx.appcompat.widget.Toolbar
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:id="@+id/TopTabsBar">
+               android:id="@+id/TopTabsBar"
+               android:background="@drawable/white_grey_border_top">
+
 
 
            </androidx.appcompat.widget.Toolbar>

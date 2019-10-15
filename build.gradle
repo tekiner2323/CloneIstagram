@@ -18,6 +18,11 @@ allprojects {
     repositories {
         google()
         jcenter()
+
+        //https://github.com/ittianyu/BottomNavigationViewEx
+        //Bu eklentileri video PART3 de yaptık.
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.google.com" }
         
     }
 }

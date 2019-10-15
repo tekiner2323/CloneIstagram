@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,29 +13,28 @@
 
         <!--Top BAR-->
         <RelativeLayout
+            android:id="@+id/TopBarRelativeLay"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/TopBarRelativeLay">
+            android:layout_height="wrap_content">
 
-            <include layout="@layout/layout_top_bar"/>
+            <include layout="@layout/layout_top_bar" />
 
         </RelativeLayout>
 
 
         <!-- Orta Sekme Alanı-->
         <RelativeLayout
+            android:id="@+id/MidScpaceRelativeLay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/MidScpaceRelativeLay"
             android:layout_below="@+id/TopBarRelativeLay">
 
-            <include layout="@layout/layout_midle_space_viewpage"/>
+            <include layout="@layout/layout_midle_space_viewpage" />
 
         </RelativeLayout>
 
-
-        <!--Alt BAR -->
-        <include layout="@layout/layout_bottom_navigasion_bar"/>
+        <!--Bottom BAR-->
+        <include layout="@layout/layout_bottom_navigasion_bar" />
 
     </RelativeLayout>
 
