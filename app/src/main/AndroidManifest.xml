@@ -9,17 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivty.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LikesActivty"></activity>
-        <activity android:name=".ProfilesActivty"></activity>
-        <activity android:name=".SearchActivty"></activity>
-        <activity android:name=".ShareActivty"></activity>
+        <activity android:name=".LikesActivty.LikesActivty"></activity>
+        <activity android:name=".ProfilesActivty.ProfilesActivty"></activity>
+        <activity android:name=".SearchActivty.SearchActivty"></activity>
+        <activity android:name=".ShareActivty.ShareActivty"></activity>
     </application>
 
 </manifest>

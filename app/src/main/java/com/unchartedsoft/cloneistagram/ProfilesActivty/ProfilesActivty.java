@@ -1,6 +1,5 @@
-package com.unchartedsoft.cloneistagram;
+package com.unchartedsoft.cloneistagram.ProfilesActivty;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,14 +10,15 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+import com.unchartedsoft.cloneistagram.R;
 import com.unchartedsoft.cloneistagram.Utiles.BottomNavigationViewHelper;
 
-public class ShareActivty extends AppCompatActivity {
-    private static final String TAG = "ShareActivty";
-    private static final int Activity_Num =2;
+public class ProfilesActivty extends AppCompatActivity {
+    private static final String TAG = "ProfilesActivty";
+    private static final int Activity_Num =4;
 
+    private Context mContext =  ProfilesActivty.this;
 
-    private Context mContext =  ShareActivty.this;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -39,10 +39,6 @@ public class ShareActivty extends AppCompatActivity {
         Menu menu = bottomNavigationViewEx.getMenu();
         MenuItem menuItem = menu.getItem(Activity_Num);
         menuItem.setChecked(true);
-
-
-
-
     }
 }
 

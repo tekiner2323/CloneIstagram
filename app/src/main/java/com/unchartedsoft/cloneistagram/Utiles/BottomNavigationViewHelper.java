@@ -9,12 +9,12 @@ import androidx.annotation.NonNull;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
-import com.unchartedsoft.cloneistagram.LikesActivty;
-import com.unchartedsoft.cloneistagram.MainActivity;
-import com.unchartedsoft.cloneistagram.ProfilesActivty;
+import com.unchartedsoft.cloneistagram.LikesActivty.LikesActivty;
+import com.unchartedsoft.cloneistagram.MainActivty.MainActivity;
+import com.unchartedsoft.cloneistagram.ProfilesActivty.ProfilesActivty;
 import com.unchartedsoft.cloneistagram.R;
-import com.unchartedsoft.cloneistagram.SearchActivty;
-import com.unchartedsoft.cloneistagram.ShareActivty;
+import com.unchartedsoft.cloneistagram.SearchActivty.SearchActivty;
+import com.unchartedsoft.cloneistagram.ShareActivty.ShareActivty;
 
 public class BottomNavigationViewHelper
 {

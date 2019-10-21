@@ -1,4 +1,4 @@
-package com.unchartedsoft.cloneistagram;
+package com.unchartedsoft.cloneistagram.MainActivty;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -6,28 +6,31 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+import com.unchartedsoft.cloneistagram.R;
 import com.unchartedsoft.cloneistagram.Utiles.BottomNavigationViewHelper;
 
-public class ProfilesActivty extends AppCompatActivity {
-    private static final String TAG = "ProfilesActivty";
-    private static final int Activity_Num =4;
+public class MainActivity extends AppCompatActivity {
 
-    private Context mContext =  ProfilesActivty.this;
+    private static final String TAG = "MainActivity";
+    private static final int Activity_Num =0;
 
+
+    private Context mContext =  MainActivity.this;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d(TAG,"onCreate: started");
-
+        Log.d(TAG, "onCreate: starting");
         setupBottomNavigationView();
     }
 
+    /**
+     * BottomNavigationView setup
+     */
     private void setupBottomNavigationView() {
         Log.d(TAG, "setupBottomNavigationView: setting up BottomNavigationView");
         BottomNavigationViewEx bottomNavigationViewEx = (BottomNavigationViewEx) findViewById(R.id.bottomNavigationBar);
@@ -38,6 +41,6 @@ public class ProfilesActivty extends AppCompatActivity {
         Menu menu = bottomNavigationViewEx.getMenu();
         MenuItem menuItem = menu.getItem(Activity_Num);
         menuItem.setChecked(true);
+
     }
 }
-

@@ -1,4 +1,4 @@
-package com.unchartedsoft.cloneistagram;
+package com.unchartedsoft.cloneistagram.LikesActivty;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,13 +10,14 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+import com.unchartedsoft.cloneistagram.R;
 import com.unchartedsoft.cloneistagram.Utiles.BottomNavigationViewHelper;
 
-public class SearchActivty extends AppCompatActivity {
-    private static final String TAG = "SearchActivty";
-    private static final int Activity_Num =1;
+public class LikesActivty extends AppCompatActivity {
+    private static final String TAG = "LikesActivty";
+    private static final int Activity_Num =3;
 
-    private Context mContext =  SearchActivty.this;
+    private Context mContext =  LikesActivty.this;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,7 +34,6 @@ public class SearchActivty extends AppCompatActivity {
         BottomNavigationViewHelper.settupBottomNavigationView(bottomNavigationViewEx);
 
         BottomNavigationViewHelper.enableNavigation(mContext, bottomNavigationViewEx);
-
 
         Menu menu = bottomNavigationViewEx.getMenu();
         MenuItem menuItem = menu.getItem(Activity_Num);
