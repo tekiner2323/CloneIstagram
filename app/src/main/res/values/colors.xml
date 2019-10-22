@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="grey">#bfbfbf</color>          //drawable color
     <color name="white">#ffffff</color>         //drawable color
+    <color name="black">#000</color>         //drawable color
 </resources>
