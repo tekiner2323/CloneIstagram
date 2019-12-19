@@ -1,10 +1,13 @@
 package com.unchartedsoft.cloneistagram.ProfilesActivty;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,18 +38,15 @@ public class ProfilesActivty extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.profileToolBar);
         setSupportActionBar(toolbar);
 
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+        ImageView profileMenu = (ImageView) findViewById(R.id.profileMenu);
+
+        profileMenu.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                Log.d(TAG, "onMenuItemClick: clicked menu item: " + item);
-                
-                switch (item.getItemId()){
-                    case R.id.profileMenu:
-                        Log.d(TAG, "onMenuItemClick: Navigating to profile Preferences.");
-                }
-                
-                
-                return false;
+            public void onClick(View v) {
+                Log.d(TAG, "onClick: navigating to account settings");
+
+                Intent intent = new Intent(mContext, AccountSettingsActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -64,12 +64,6 @@ public class ProfilesActivty extends AppCompatActivity {
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.profile_menu, menu);
 
-
-        return true;
-    }
 }
 
