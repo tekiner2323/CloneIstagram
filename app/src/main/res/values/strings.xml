@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">CloneIstagram</string>
+
+    <string name="Follewers">Follewers</string>
     <string name="Following">Following</string>
     <string name="Post">Post</string>
-    <string name="Follewers">Follewers</string>
+
+    <string name="edit_profile">Edit Profile</string>
+    <string name="sign_out">Sign Out</string>
+
+
+
+
+
 
 </resources>
