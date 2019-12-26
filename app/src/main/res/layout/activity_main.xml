@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/TopBarRelativeLay">
 
-            <include layout="@layout/layout_midle_space_viewpage" />
+            <include layout="@layout/layout_center_viewpager" />
 
         </RelativeLayout>
 

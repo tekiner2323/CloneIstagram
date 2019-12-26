@@ -13,6 +13,7 @@ import com.google.android.material.tabs.TabLayout;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.unchartedsoft.cloneistagram.R;
 import com.unchartedsoft.cloneistagram.Utiles.BottomNavigationViewHelper;
+import com.unchartedsoft.cloneistagram.Utiles.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 

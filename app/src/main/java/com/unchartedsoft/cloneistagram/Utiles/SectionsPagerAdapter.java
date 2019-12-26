@@ -1,4 +1,4 @@
-package com.unchartedsoft.cloneistagram.MainActivty;
+package com.unchartedsoft.cloneistagram.Utiles;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
